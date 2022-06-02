@@ -2,7 +2,7 @@
 /**
  * @package ww-scanner-fms
  * Plugin Name: WW Scanner FMS
- * Plugin URI: github/repository
+ * Plugin URI: https://github.com/Dmitriy-2014/ww-scanner-fms
  * Description: A simple scanner for your main theme. Looks for suspicious inclusions in theme files. ( base64, eval, shell_exec, etc. )
  * Version: 1.0.1
  * Author: Dmitry Smirnov

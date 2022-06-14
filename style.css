@@ -7,12 +7,34 @@
 	color: maroon;
 	font-weight: bold;
 	font-size: 20px;
+	
+	color: white;
+    border: 2px dashed red;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px 4px;
+}
+
+/* Дизайн для всего найденых */
+.fms-total_find_sum {
+	color: black; background: white; border-radius: 0px;padding: 0px 4px;font-weight: bold;border: 1px solid #a800ff;
 }
 
 .fms-ok {
 	color: green;
 	font-weight: bold;
 	font-size: 20px;
+	
+	color: white;
+    border: 2px dashed #00ff00;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px 4px;
+}
+
+/* Дизайн для всего когда ничего не найдено */
+.fms-total_nonefind_sum {
+	color: black; background: white; border-radius: 0px;padding: 0px 4px;font-weight: bold;border: 1px solid #a800ff;
 }
 
 /* Button Start Scanner */
@@ -38,7 +60,7 @@
 	background-color: #dadada; padding: 10px 15px; font-size: 18px; font-weight: bold; cursor: pointer; width: fit-content;
 }
 .fms-details p {
-	padding: 20px; margin: 0; line-height: 1.6; font-size: 16px; background-color: #e2e2e2;
+	padding: 20px; margin: 0; line-height: 1.6; font-size: 16px; background-color: #e2e2e2; width: 350px;
 }
 
 /* Lines hr */
@@ -126,6 +148,31 @@
     overflow: auto;
 }
 
+/* Обертка для результатов поиска */
+.fms-searchresultwrapper {
+	padding: 5px;
+    border: 2px inset #898989;
+    background: #ffffff;
+    /* margin-right: 20px; */
+    display: inline-block;
+    margin-right: 20px;
+    height: auto;
+    overflow: auto;
+    background: black;
+    color: white;
+    border-radius: 2px;
+}
+
+/* Прогресбар 100% */
+.fms-progressbar {
+	background: #ffffff;color: black;text-align: center;padding: 3px;border: 2px solid black;outline: 2px dashed white;font-weight: bold;
+}
+
+/* Там где мигающий курсор в консоли */
+.fms-consoleinput {
+	color: white;
+}
+
 /* Дизайн для заголовка Scanner FMS */
 .fms-scannerfmslogo {
 	padding: 5px;
@@ -140,7 +187,6 @@
 }
 
 /* Дизайн для Found files */
-
 .fms-foundfiles {
 	padding: 5px;
     background: linear-gradient(90deg, #d7d7d7, transparent);
@@ -148,6 +194,20 @@
     text-shadow: 1px 1px 2px black;
     font-weight: bold;
     border: 2px inset #dadada;
+    margin-right: 20px;
+    text-transform: uppercase;
+    width: fit-content;
+    margin-bottom: 0px;
+}
+
+/* Дизайн для Searching results */
+.fms-searchingresults {
+	padding: 5px;
+    background: linear-gradient(90deg, #000000, #00000085);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    border: 2px inset #1e1e1e;
     margin-right: 20px;
     text-transform: uppercase;
     width: fit-content;
@@ -191,7 +251,24 @@
 .fms-themelgwrapper {
 	display: flex;
 	align-items: center;
-	width: fit-content;
+/*	width: fit-content;*/
     padding: 10px;
     background: linear-gradient(90deg, #d7d7d7, transparent);
+}
+
+/* Мигающий квадратик */
+.fms-blinkblock {
+	animation: blinker 1.0s linear infinite;
+    color: #ffffff;
+}
+ @keyframes blinker {  
+    50% { opacity: 0; }
+}
+
+/* Обертка для всего сканнера */
+.fms-programwrapper {
+/*	border: 2px outset #ffffff;*/
+/*    background: #cccccc2e;*/
+/*    padding: 10px;*/
+    width: fit-content;
 }

@@ -4,7 +4,7 @@
  * Plugin Name: WW Scanner FMS
  * Plugin URI: https://github.com/Dmitriy-2014/ww-scanner-fms
  * Description: A simple scanner for your main theme. Looks for suspicious inclusions in theme files. ( base64, eval, shell_exec, etc. )
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Dmitry Smirnov
  * Author URI: https://github.com/Dmitriy-2014/Dmitriy-2014
  * License: GPLv2 or later
@@ -32,22 +32,22 @@ Copyright 2021-2022 Smirnov, Sole proprietorship.
 
 if (!defined('ABSPATH')) {exit;} // Exit if accessed directly.
 
-function menu_panel_scanner_fms() {
+function sfms_menu_panel_scanner() {
 
 add_menu_page('Scanner FMS', 'Scanner FMS', 'manage_options', 'ww-scanner-fms/ww-scanner-fms-dashboard.php', '','dashicons-admin-generic', null);
 
 }
 
-add_action('admin_menu', 'menu_panel_scanner_fms', 20);
+add_action('admin_menu', 'sfms_menu_panel_scanner', 20);
 
 // Add styles
-function ww_scanner_fms_stylecss(){
+function sfms_scanner_stylecss() {
 
-wp_register_style( 'ww-scanner-fms-style', plugins_url( 'style.css', __FILE__ ), '', '1.0.1', 'all' );
+wp_register_style( 'ww-scanner-fms-style', plugins_url( 'style.css', __FILE__ ), '', '1.0.2', 'all' );
 
 wp_enqueue_style( 'ww-scanner-fms-style' );
 
 }
 
-add_action( 'admin_enqueue_scripts', 'ww_scanner_fms_stylecss' );
+add_action( 'admin_enqueue_scripts', 'sfms_scanner_stylecss' );
 ?>

@@ -3,9 +3,9 @@ Contributors: dimasicou2k
 Tags: scanner, scan, scanning, search, virus, viruses, security, secure, malware, antivirus, backdoor, infection, hack, vulnerability, injection, trojan
 Donate link: https://github.com/Dmitriy-2014/Dmitriy-2014
 Requires at least: 5.0
-Tested up to: 5.9
+Tested up to: 6.0
 Requires PHP: 7.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,6 +36,14 @@ A: Just press START SCANNER
 3. Not OK - Entry found
 
 == Changelog ==
+
+= 1.0.2 =
+*Release Date - 14 June 2022*
+
+* Add styles for results.
+* Redesigned patterns for search.
+* Another change.
+
 = 1.0.1 =
 * Fixed errors in loop preg_match for find patterns.
 * Removed the button for displaying the category path.
